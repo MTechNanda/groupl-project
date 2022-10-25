@@ -120,6 +120,7 @@ app.post("/findAccount", (req, res) => {
     }
 });
 
+// Route to get all faqs
 app.post("/faq", (req, res) => {
    
             db.query(`SELECT * FROM custservice.faq`, (err, result) => {
